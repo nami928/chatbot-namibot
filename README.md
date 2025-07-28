@@ -17,6 +17,26 @@ A smart chatbot that can search and retrieve information from Wikipedia document
 
 ## Installation
 
+### Option 1: Using Conda (Recommended)
+
+1. **Clone or download the project**
+   ```bash
+   cd chatbot-namibot
+   ```
+
+2. **Create and activate conda environment**
+   ```bash
+   conda create -n namibot python=3.11 -y
+   conda activate namibot
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install wikipedia-api requests
+   ```
+
+### Option 2: Using pip directly
+
 1. **Clone or download the project**
    ```bash
    cd chatbot-namibot
@@ -31,21 +51,26 @@ A smart chatbot that can search and retrieve information from Wikipedia document
 
    **Quick Start (Launcher):**
    ```bash
+   # Make sure conda environment is activated
+   conda activate namibot
    python run.py
    ```
 
    **Console version:**
    ```bash
+   conda activate namibot
    python namibot.py
    ```
 
    **GUI version:**
    ```bash
+   conda activate namibot
    python gui_namibot.py
    ```
 
    **Test suite:**
    ```bash
+   conda activate namibot
    python test_namibot.py
    ```
 
@@ -53,7 +78,7 @@ A smart chatbot that can search and retrieve information from Wikipedia document
 
 ### Console Interface
 
-Run `python namibot.py` and start asking questions! NamiBot will search Wikipedia documents for:
+Run `conda activate namibot && python namibot.py` and start asking questions! NamiBot will search Wikipedia documents for:
 
 - **People**: "Who is Albert Einstein?", "Tell me about Marie Curie"
 - **Concepts**: "What is artificial intelligence?", "What is quantum physics?"
@@ -65,7 +90,7 @@ Run `python namibot.py` and start asking questions! NamiBot will search Wikipedi
 
 ### GUI Interface
 
-Run `python gui_namibot.py` for a graphical interface with:
+Run `conda activate namibot && python gui_namibot.py` for a graphical interface with:
 
 - **Chat display** - Scrollable conversation area with formatted text
 - **Input field** - Type your questions
@@ -248,7 +273,7 @@ Feel free to:
 
 ### Getting Help
 
-- Run the test suite: `python test_namibot.py`
+- Run the test suite: `conda activate namibot && python test_namibot.py`
 - Check the console for error messages
 - Ensure all dependencies are installed
 - Verify internet connection
